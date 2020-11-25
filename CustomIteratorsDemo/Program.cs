@@ -17,6 +17,8 @@ namespace CustomIteratorsDemo
                 Console.WriteLine(erbiumite);
 
             }
+
+            Console.ReadLine();
         }
     }
 }
