@@ -10,6 +10,13 @@ namespace CustomIteratorsDemo
     {
         static void Main(string[] args)
         {
+            ErbiumRoster erbium = new ErbiumRoster();
+
+            foreach (string erbiumite in erbium)
+            {
+                Console.WriteLine(erbiumite);
+
+            }
         }
     }
 }
