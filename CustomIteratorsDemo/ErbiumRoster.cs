@@ -22,27 +22,28 @@ namespace CustomIteratorsDemo
 
         public ErbiumRoster()
         {
-            classMembers = new string[] { "Denis", "Greg", "Joe", "Pa", "Zack B", "Zach I" };
             classStatus = new string[] { "Amazing", "Awesome", "Fantastic" };
         }
 
         public IEnumerator GetEnumerator()
         {
+            int statusIndex = 0;
             for(int index = 0; index < classMembers.Length; index++)
             {
-
-                if (index <= 2)
+                
+                if (index % 3 == 0)
                 {
-                    yield return classMembers[index];
-                    yield return classStatus[index];
-
-                }
-                else if (index > 2)
-                {
-                    int statusIndex = index - 3;
+                    statusIndex = 0;
                     yield return classMembers[index];
                     yield return classStatus[statusIndex];
+                    statusIndex++;
 
+                }
+                else
+                {
+                    yield return classMembers[index];
+                    yield return classStatus[statusIndex];
+                    statusIndex++;
                 }
             }
 

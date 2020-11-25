@@ -11,7 +11,7 @@ namespace CustomIteratorsDemo
         static void Main(string[] args)
         {
             ErbiumRoster erbium = new ErbiumRoster();
-            erbium.ClassMembers = new string[] { "Denis", "Greg", "Joe", "Pa", "Zack B", "Zach I" };
+            erbium.ClassMembers = new string[] { "Denis", "Greg", "Joe", "Pa", "Zack B", "Zach I", "JJ" };
 
 
             foreach (string erbiumite in erbium)
