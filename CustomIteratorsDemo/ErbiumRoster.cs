@@ -12,6 +12,14 @@ namespace CustomIteratorsDemo
         private string[] classMembers;
         private string[] classStatus;
 
+        public string[] ClassMembers 
+        {
+            get { return classMembers; } 
+            
+            set { classMembers = value; } 
+        
+        }
+
         public ErbiumRoster()
         {
             classMembers = new string[] { "Denis", "Greg", "Joe", "Pa", "Zack B", "Zach I" };
