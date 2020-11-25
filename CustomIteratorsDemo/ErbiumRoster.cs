@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomIteratorsDemo
 {
-    class ErbiumRoster : IEnumerable
+    public class ErbiumRoster : IEnumerable
     {
         private string[] classMembers;
         private string[] classStatus;
